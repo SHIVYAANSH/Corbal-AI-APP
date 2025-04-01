@@ -680,7 +680,9 @@ h3{
           </div>
           <!-- Menu Container for Model Version Selection (Left Side) -->
 
-      
+          <button class="back-button" onclick="goBack()">
+            <i>&larr;</i> Go Back
+        </button>
 
 
           
@@ -688,9 +690,7 @@ h3{
        
        
         <div class="chat-box" id="chatBox">
-            <button class="back-button" onclick="goBack()">
-                <i>&larr;</i> Go Back
-            </button>
+          
             
             <div class="welcome-message" id="welcomeMessage">
                 <img id="user-img" src="logo.png" alt="User Profile">
@@ -742,7 +742,7 @@ h3{
     <script>
 
 
-    
+      
         const API_KEY = "AIzaSyALlMBZRyrD3Wyxi_7u8abRMR184uupBwY";
         let typingInProgress = false;
         let typingTimeout;
@@ -919,7 +919,7 @@ h3{
             // Assuming you are using Firebase Authentication (modify as per your platform)
            
                     window.location.href = "choice-chat.html"; // Redirect to login page after sign out
-               
+              
         }
         function toggleMenu() {
             var menu = document.getElementById('dropdownMenu');
