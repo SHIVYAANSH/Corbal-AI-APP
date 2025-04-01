@@ -673,7 +673,10 @@ h3{
             </div>
           </div>
 
-        
+          <button class="back-button" onclick="goBack()">
+            <i>&larr;</i> Go Back
+        </button>
+    
 
 
           
@@ -684,13 +687,9 @@ h3{
 
           
                
-         
-    
+       
        
         <div class="chat-box" id="chatBox">
-            <button class="back-button" onclick="goBack()">
-                <i>&larr;</i> Go Back
-            </button>
           
             
             <div class="welcome-message" id="welcomeMessage">
@@ -703,9 +702,6 @@ h3{
             <div class="user-info" id="user-info">
                 <!-- User info will be displayed here -->
             </div>
-
-           
-        
             
             <div class="chat-box" id="chatBox">
 
@@ -713,6 +709,7 @@ h3{
    
     
    
+</div>
 
 
         </div>
@@ -728,7 +725,6 @@ h3{
        <h3>**AI can make errors**</h3>
       
     </div>
-   
     
     
     <div id="thinkingNotification" class="thinking-notification">
@@ -744,7 +740,6 @@ h3{
     <script>
 
 
-      
         const API_KEY = "AIzaSyALlMBZRyrD3Wyxi_7u8abRMR184uupBwY";
         let typingInProgress = false;
         let typingTimeout;
@@ -897,10 +892,9 @@ h3{
        
 
         function signOut() {
-            // Assuming you are using Firebase Authentication (modify as per your platform)
            
-                    window.location.href = "choice-chat.html"; // Redirect to login page after sign out
-               
+                    window.location.href = "LOGIN.html"; // Redirect to login page after sign out
+              
         }
         function toggleMenu() {
             var menu = document.getElementById('dropdownMenu');
