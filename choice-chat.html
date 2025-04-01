@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Corbel AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b1b2b, #3e4b69);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 40px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 1s ease-out;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(145deg, #4e5a75, #3f4c65);
+        }
+
+        h2 {
+            font-family: 'Verdana', sans-serif;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .google-btn {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #db4437;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .google-btn:hover {
+            background: #c1351d;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .google-btn:active {
+            transform: scale(1);
+        }
+
+        .selection-btn {
+            width: 100%;
+            font-size: 1.2rem;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #34a853;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .selection-btn:hover {
+            background: #007e1a;
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .selection-btn:active {
+            transform: scale(1);
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        h2{
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            font-size: 30px;
+            color:white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to Corbel AI</h2>
+        <h1>Choose your preferred chat mode:</h1>
+        
+        <!-- Friendly Chat Button -->
+        <button class="selection-btn" onclick="navigateToPage('chat')">Chat Friendly</button>
+        
+        <!-- Code Friendly Button -->
+        <button class="selection-btn" onclick="navigateToPage('code')">Code Friendly</button>
+        
+        
+    </div>
+
+    <script>
+        // Navigation based on user's choice
+        function navigateToPage(option) {
+            if (option === 'code') {
+                window.location.href = "index1.html";  // Navigate to Code Friendly page
+            } else if (option === 'chat') {
+                window.location.href = "index.html";  // Navigate to Chat Friendly page
+            }
+        }
+
+        // Google Sign-in Function
+      
+    </script>
+</body>
+</html>
